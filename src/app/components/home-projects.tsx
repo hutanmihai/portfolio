@@ -1,6 +1,5 @@
 import Iconify from '@/components/iconify'
 import { varFade } from '@/components/animate'
-import { Projects } from '@/types/project.type'
 import SectionContainer from '@/app/components/section-container'
 
 import Box from '@mui/material/Box'
@@ -10,7 +9,7 @@ import Button from '@mui/material/Button'
 import { alpha } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 
-const PROJECTS: Projects = [
+const PROJECTS = [
   {
     title: 'Brain Anomaly Detection',
     description:
@@ -33,7 +32,7 @@ const PROJECTS: Projects = [
       'sqlalchemy',
       'postgresql',
       'docker',
-      'github-actions',
+      'githubactions',
       'pytest-wordmark',
       'poetry',
     ],

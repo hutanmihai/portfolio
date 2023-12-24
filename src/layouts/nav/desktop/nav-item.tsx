@@ -1,5 +1,4 @@
 import { forwardRef } from 'react'
-import { RouterLink } from '@/routes/components'
 
 import Link from '@mui/material/Link'
 import { styled } from '@mui/material/styles'
@@ -17,7 +16,7 @@ export const NavItem = forwardRef<HTMLDivElement, NavItemProps>(
     )
 
     return (
-      <Link component={RouterLink} href={path} color="inherit" underline="none">
+      <Link href={path} color="inherit" underline="none">
         {renderContent}
       </Link>
     )

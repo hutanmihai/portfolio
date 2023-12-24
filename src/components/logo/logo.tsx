@@ -1,5 +1,4 @@
-import { forwardRef, ElementType } from 'react'
-import { RouterLink } from '@/routes/components'
+import { ElementType } from 'react'
 
 import Link from '@mui/material/Link'
 import Box, { BoxProps } from '@mui/material/Box'
@@ -16,28 +15,19 @@ const MuiBox = <C extends ElementType>(props: BoxProps<C, { component?: C }> & B
   return <Box {...props}>{props.children}</Box>
 }
 
-// eslint-disable-next-line react/display-name
-const Logo = forwardRef<HTMLDivElement, LogoProps>(
-  ({ disabledLink = false, sx, ...other }, ref) => {
-    const logo = (
-      <MuiBox
-        component="img"
-        src="/logo/logo_single.svg"
-        sx={{ width: 40, height: 40, cursor: 'pointer', ...sx }}
-        alt="logo"
-      />
-    )
+export default function Logo() {
+  const logo = (
+    <MuiBox
+      component="img"
+      src="/logo/logo_single.svg"
+      sx={{ width: 40, height: 40, cursor: 'pointer' }}
+      alt="logo"
+    />
+  )
 
-    if (disabledLink) {
-      return logo
-    }
-
-    return (
-      <Link component={RouterLink} href="/" sx={{ display: 'contents' }}>
-        {logo}
-      </Link>
-    )
-  }
-)
-
-export default Logo
+  return (
+    <Link href="/" sx={{ display: 'contents' }}>
+      {logo}
+    </Link>
+  )
+}
