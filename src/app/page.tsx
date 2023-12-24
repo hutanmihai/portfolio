@@ -1,5 +1,3 @@
-'use client'
-
 import MainLayout from '@/layouts/main-layout'
 import HomeHero from '@/app/components/home-hero'
 import HomeSkills from '@/app/components/home-skills'

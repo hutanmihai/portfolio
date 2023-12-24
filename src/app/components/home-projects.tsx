@@ -1,3 +1,5 @@
+'use client'
+
 import Iconify from '@/components/iconify'
 import { varFade } from '@/components/animate'
 import SectionContainer from '@/app/components/section-container'

@@ -1,3 +1,5 @@
+'use client'
+
 import { ReactNode } from 'react'
 import { bgGradient } from '@/theme/css'
 import { m, Variants } from 'framer-motion'

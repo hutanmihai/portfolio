@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { varFade } from '@/components/animate'
 import { useResponsive } from '@/hooks/use-responsive'

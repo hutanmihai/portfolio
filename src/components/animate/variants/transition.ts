@@ -1,13 +1,6 @@
-import { TranExitType, TranHoverType, TranEnterType } from '../types'
+import { TranExitType, TranEnterType } from '../types'
 
 // ----------------------------------------------------------------------
-
-export const varTranHover = (props?: TranHoverType) => {
-  const duration = props?.duration || 0.32
-  const ease = props?.ease || [0.43, 0.13, 0.23, 0.96]
-
-  return { duration, ease }
-}
 
 export const varTranEnter = (props?: TranEnterType) => {
   const duration = props?.durationIn || 0.64
