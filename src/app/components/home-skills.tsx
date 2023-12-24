@@ -1,5 +1,3 @@
-'use client'
-
 import { m } from 'framer-motion'
 import Iconify from '@/components/iconify'
 import { useResponsive } from '@/hooks/use-responsive'
@@ -114,38 +112,40 @@ export default function HomeSkills() {
   )
 
   return (
-    <Box sx={{ position: 'relative' }}>
-      <StyledPolygon />
-      <Box
-        sx={{
-          minHeight: 600,
-          overflow: 'hidden',
-          position: 'relative',
-          ...bgGradient({
-            startColor: `${theme.palette.grey[900]} 25%`,
-            endColor: alpha(theme.palette.grey[900], 0),
-            imgUrl: '/assets/landing-page/skills.svg',
-          }),
-          ...(mdUp && {
+    <section id="skills">
+      <Box sx={{ position: 'relative' }}>
+        <StyledPolygon />
+        <Box
+          sx={{
+            minHeight: 600,
+            overflow: 'hidden',
+            position: 'relative',
             ...bgGradient({
-              color: alpha(theme.palette.background.default, 0.8),
-              imgUrl: '/assets/landing-page/overlay_skills.webp',
+              startColor: `${theme.palette.grey[900]} 25%`,
+              endColor: alpha(theme.palette.grey[900], 0),
+              imgUrl: '/assets/landing-page/skills.svg',
             }),
-          }),
-          my: 15,
-        }}
-      >
-        <Container component={MotionViewport}>
-          <Grid container>
-            <Grid xs={12} md={6}>
-              {renderDescription}
-            </Grid>
+            ...(mdUp && {
+              ...bgGradient({
+                color: alpha(theme.palette.background.default, 0.8),
+                imgUrl: '/assets/landing-page/overlay_skills.webp',
+              }),
+            }),
+            my: 15,
+          }}
+        >
+          <Container component={MotionViewport}>
+            <Grid container>
+              <Grid xs={12} md={6}>
+                {renderDescription}
+              </Grid>
 
-            {mdUp && <Grid md={6}>{renderImg}</Grid>}
-          </Grid>
-        </Container>
+              {mdUp && <Grid md={6}>{renderImg}</Grid>}
+            </Grid>
+          </Container>
+        </Box>
+        <StyledPolygon anchor="bottom" />
       </Box>
-      <StyledPolygon anchor="bottom" />
-    </Box>
+    </section>
   )
 }

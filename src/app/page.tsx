@@ -13,9 +13,7 @@ import Box from '@mui/material/Box'
 export default function Home() {
   return (
     <MainLayout>
-      <section id="home">
-        <HomeHero />
-      </section>
+      <HomeHero />
       <Box
         sx={{
           overflow: 'hidden',
@@ -25,9 +23,7 @@ export default function Home() {
       >
         <HomeAboutMe />
         <HomeProjects />
-        <section id="skills">
-          <HomeSkills />
-        </section>
+        <HomeSkills />
         <HomeExperience />
         <HomeEducation />
       </Box>

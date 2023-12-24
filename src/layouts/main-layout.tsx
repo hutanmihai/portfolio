@@ -1,3 +1,5 @@
+'use client'
+
 import { ReactNode } from 'react'
 import Footer from '@/layouts/footer'
 import Navbar from '@/layouts/nav/nav'

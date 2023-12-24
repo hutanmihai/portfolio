@@ -1,5 +1,3 @@
-'use client'
-
 import Iconify from '@/components/iconify'
 import { m, useScroll } from 'framer-motion'
 import { HEADER } from '@/layouts/nav/config-layout'
@@ -210,7 +208,7 @@ export default function HomeHero() {
   )
 
   return (
-    <>
+    <section id="home">
       <StyledRoot
         ref={heroRef}
         sx={{
@@ -233,6 +231,6 @@ export default function HomeHero() {
       {mdUp && renderPolygons}
 
       <Box sx={{ height: { md: '100vh' } }} />
-    </>
+    </section>
   )
 }
