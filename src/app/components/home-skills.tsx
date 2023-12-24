@@ -44,53 +44,47 @@ export default function HomeSkills() {
 
   const renderDescription = (
     <Box sx={{ textAlign: { xs: 'center', md: 'unset' }, mt: { xs: 10, md: 20 } }}>
-      <m.div variants={varFade().inUp}>
-        <Typography
-          variant="h2"
-          sx={{
-            mt: 3,
-            mb: 1,
-            ...(mdUp && {
-              mr: 7,
-            }),
-            ...textGradient(
-              `300deg, ${theme.palette.primary.main} 0%, ${theme.palette.warning.main} 100%`
-            ),
-          }}
-        >
-          Skills and Technologies
-        </Typography>
-      </m.div>
+      <Typography
+        variant="h2"
+        sx={{
+          mt: 3,
+          mb: 1,
+          ...(mdUp && {
+            mr: 7,
+          }),
+          ...textGradient(
+            `300deg, ${theme.palette.primary.main} 0%, ${theme.palette.warning.main} 100%`
+          ),
+        }}
+      >
+        Skills and Technologies
+      </Typography>
 
-      <m.div variants={varFade().in}>
-        <Typography
-          variant="body2"
-          color="text.secondary"
-          sx={{
-            mb: 5,
-            ...(mdUp && {
-              mr: 15,
-            }),
-          }}
-        >
-          More detailed information about my skills and technologies can be found on my github
-          profile.
-        </Typography>
-      </m.div>
+      <Typography
+        variant="body2"
+        color="text.secondary"
+        sx={{
+          mb: 5,
+          ...(mdUp && {
+            mr: 15,
+          }),
+        }}
+      >
+        More detailed information about my skills and technologies can be found on my github
+        profile.
+      </Typography>
 
-      <m.div variants={varFade().inUp}>
-        <Button
-          color="inherit"
-          size="large"
-          variant="contained"
-          endIcon={<Iconify icon="icon-park:github" />}
-          target="_blank"
-          rel="noopener"
-          href="https://github.com/hutanmihai"
-        >
-          Go to Github
-        </Button>
-      </m.div>
+      <Button
+        color="inherit"
+        size="large"
+        variant="contained"
+        endIcon={<Iconify icon="icon-park:github" />}
+        target="_blank"
+        rel="noopener"
+        href="https://github.com/hutanmihai"
+      >
+        Go to Github
+      </Button>
     </Box>
   )
 
@@ -98,7 +92,6 @@ export default function HomeSkills() {
     <Box
       component={m.img}
       src="/assets/landing-page/skills.svg"
-      variants={varFade().in}
       sx={{
         height: 1,
         width: 0.5,
@@ -137,13 +130,15 @@ export default function HomeSkills() {
           }}
         >
           <Container component={MotionViewport}>
-            <Grid container>
-              <Grid xs={12} md={6}>
-                {renderDescription}
-              </Grid>
+            <m.div variants={varFade().in}>
+              <Grid container>
+                <Grid xs={12} md={6}>
+                  {renderDescription}
+                </Grid>
 
-              {mdUp && <Grid md={6}>{renderImg}</Grid>}
-            </Grid>
+                {mdUp && <Grid md={6}>{renderImg}</Grid>}
+              </Grid>
+            </m.div>
           </Container>
         </Box>
         <StyledPolygon anchor="bottom" />
