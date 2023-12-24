@@ -49,7 +49,6 @@ export default function Navbar() {
         <Container sx={{ height: 1, display: 'flex', alignItems: 'center' }}>
           <NavLeftSide />
           <Box sx={{ flexGrow: 1 }} />
-          {mdUp && <NavDesktop data={navConfig} />}
           <Stack
             alignItems="center"
             direction={{ xs: 'row', md: 'row-reverse' }}
@@ -57,6 +56,7 @@ export default function Navbar() {
           >
             <ResumeButton />
             <ThemeModeButton />
+            {mdUp && <NavDesktop data={navConfig} />}
             {!mdUp && <NavMobile data={navConfig} />}
           </Stack>
         </Container>

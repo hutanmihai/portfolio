@@ -47,7 +47,7 @@ export default function NavMobile({ data }: NavProps) {
         }}
       >
         {/*<Scrollbar>*/}
-        <Logo sx={{ mx: 2.5, my: 3 }} />
+        <Logo sx={{ my: 3 }} />
 
         {data.map((list) => (
           <NavList key={list.title} data={list} />
