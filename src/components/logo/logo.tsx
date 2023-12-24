@@ -15,12 +15,12 @@ const MuiBox = <C extends ElementType>(props: BoxProps<C, { component?: C }> & B
   return <Box {...props}>{props.children}</Box>
 }
 
-export default function Logo() {
+export default function Logo({ sx }: { sx?: any }) {
   const logo = (
     <MuiBox
       component="img"
       src="/logo/logo_single.svg"
-      sx={{ width: 40, height: 40, cursor: 'pointer' }}
+      sx={{ width: 40, height: 40, cursor: 'pointer', ...sx }}
       alt="logo"
     />
   )
