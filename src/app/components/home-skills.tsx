@@ -1,3 +1,5 @@
+'use client'
+
 import { m } from 'framer-motion'
 import Iconify from '@/components/iconify'
 import { useResponsive } from '@/hooks/use-responsive'

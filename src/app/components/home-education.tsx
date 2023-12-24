@@ -4,7 +4,6 @@ import { useResponsive } from '@/hooks/use-responsive'
 import SectionContainer from '@/app/components/section-container'
 
 import Box from '@mui/material/Box'
-import { useTheme } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 import {
   Timeline,
@@ -41,8 +40,6 @@ const EDUCATIONS = [
 ]
 
 export default function HomeEducation() {
-  const theme = useTheme()
-
   const mdUp = useResponsive('up', 'md')
 
   return (
