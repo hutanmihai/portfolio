@@ -13,7 +13,7 @@ export default function NavLeftSide() {
       spacing={{ xs: 0.5, sm: 1 }}
     >
       <Logo />
-      <Link href='/' color="inherit" underline="none">
+      <Link href="/" color="inherit" underline="none">
         <Typography variant="h4">mihaihutan</Typography>
       </Link>
     </Stack>
