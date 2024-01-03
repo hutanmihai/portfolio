@@ -100,16 +100,16 @@ export default function HomeEducation() {
                   justifyContent: 'space-between',
                 }}
               >
-                <Typography variant="h4" gutterBottom>
+                <Typography variant="h4" component="p" gutterBottom>
                   {education.institution}
                 </Typography>
 
-                <Typography variant="body1" gutterBottom>
+                <Typography variant="body1" component="p" gutterBottom>
                   {education.degree}, {education.date}, {education.gpa}
                 </Typography>
 
                 {education.descriptions.map((description, index) => (
-                  <Typography key={index} variant="body2" gutterBottom>
+                  <Typography key={index} variant="body2" component="p" gutterBottom>
                     {description}
                   </Typography>
                 ))}

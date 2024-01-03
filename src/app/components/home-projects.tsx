@@ -73,10 +73,12 @@ export default function HomeProjects() {
             }}
           >
             <Stack spacing={2}>
-              <Typography variant="h4" mb={2}>
+              <Typography variant="h4" component="p" mb={2}>
                 {project.title}
               </Typography>
-              <Typography sx={{ color: 'text.secondary' }}>{project.description}</Typography>
+              <Typography sx={{ color: 'text.secondary' }} component="p">
+                {project.description}
+              </Typography>
               <Stack direction="row" spacing={2} justifyContent="center" alignItems="center" mb={4}>
                 {project.github_link && (
                   <Button

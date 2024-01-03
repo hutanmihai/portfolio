@@ -17,7 +17,7 @@ import { alpha, styled } from '@mui/material/styles'
 
 const StyledRoot = styled('div')(({ theme }) => ({
   ...bgGradient({
-    color: alpha(theme.palette.background.default, theme.palette.mode === 'light' ? 0.9 : 0.94),
+    color: alpha(theme.palette.background.default, theme.palette.mode === 'light' ? 0.8 : 0.94),
     imgUrl: '/assets/landing-page/hero.webp',
   }),
   width: '100%',
@@ -39,7 +39,7 @@ const StyledWrapper = styled('div')(({ theme }) => ({
   },
 }))
 
-const StyledTextGradient = styled(m.h1)(({ theme }) => ({
+const StyledTextGradient = styled(m.h2)(({ theme }) => ({
   ...textGradient(
     `300deg, ${theme.palette.primary.main} 0%, ${theme.palette.warning.main} 25%, ${theme.palette.primary.main} 50%, ${theme.palette.warning.main} 75%, ${theme.palette.primary.main} 100%`
   ),
@@ -138,6 +138,7 @@ export default function HomeHero() {
       <m.div variants={varFade().in}>
         <Typography
           variant="h2"
+          component="h1"
           sx={{
             textAlign: 'center',
           }}
@@ -169,12 +170,6 @@ export default function HomeHero() {
       </m.div>
 
       <Stack spacing={3} sx={{ textAlign: 'center', mt: 3 }}>
-        <m.div variants={varFade().in}>
-          <Typography variant="h4" sx={{ opacity: 0.48 }}>
-            Socials
-          </Typography>
-        </m.div>
-
         <Stack spacing={5} direction="row" justifyContent="center">
           <m.div variants={varFade().in}>
             <a

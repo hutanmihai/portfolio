@@ -46,6 +46,7 @@ export default function HomeSkills() {
     <Box sx={{ textAlign: { xs: 'center', md: 'unset' }, mt: { xs: 10, md: 20 } }}>
       <Typography
         variant="h2"
+        component="h2"
         sx={{
           mt: 3,
           mb: 1,

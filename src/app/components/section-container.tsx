@@ -41,7 +41,7 @@ export default function SectionContainer({ children, useBgGradient, id, variants
       <Container maxWidth="lg" component={MotionViewport}>
         <m.div variants={variants}>
           {title && (
-            <Typography variant="h2" align="center" sx={{ mb: 5 }}>
+            <Typography variant="h2" component="h2" align="center" sx={{ mb: 5 }}>
               {title}
             </Typography>
           )}

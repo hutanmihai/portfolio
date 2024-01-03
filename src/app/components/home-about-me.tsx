@@ -70,11 +70,13 @@ export default function HomeAboutMe() {
               }}
             />
 
-            <Typography variant="h5" sx={{ mt: 6, mb: 2 }}>
+            <Typography variant="h5" component="h3" sx={{ mt: 6, mb: 2 }}>
               {card.title}
             </Typography>
 
-            <Typography sx={{ color: 'text.secondary' }}>{card.description}</Typography>
+            <Typography sx={{ color: 'text.secondary' }} component="p">
+              {card.description}
+            </Typography>
           </Card>
         ))}
       </Box>

@@ -107,16 +107,16 @@ export default function HomeExperience() {
                   justifyContent: 'space-between',
                 }}
               >
-                <Typography variant="h4" gutterBottom>
+                <Typography variant="h4" component="h3" gutterBottom>
                   {experience.title}
                 </Typography>
 
-                <Typography variant="body1" gutterBottom>
+                <Typography variant="body1" component="p" gutterBottom>
                   {experience.company}, {experience.location}, {experience.date}
                 </Typography>
 
                 {experience.descriptions.map((description, index) => (
-                  <Typography key={index} variant="body2" gutterBottom>
+                  <Typography key={index} variant="body2" component="p" gutterBottom>
                     {description}
                   </Typography>
                 ))}
