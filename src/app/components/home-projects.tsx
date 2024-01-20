@@ -13,6 +13,28 @@ import Typography from '@mui/material/Typography'
 
 const PROJECTS = [
   {
+    title: 'Reinforcement Learning - Atari Skiing',
+    description:
+      'Developed DQN and DDQN algorithms for OpenAI Gym Skiing environment. Showcased commitment to refining network architecture and preprocessing, addressing challenges in hyperparameter tuning. This project marked my initial venture into reinforcement learning implementations.',
+    live_demo_link: null,
+    youtube_link: null,
+    github_link: 'https://github.com/hutanmihai/reinforcement-learning-skiing',
+    technologies: ['python', 'pytorch', 'numpy', 'plotly', 'opencv-wordmark', 'anaconda'],
+  },
+  {
+    title: 'Double Double Dominoes',
+    description:
+      'Implemented a computer vision system for automated dominoes game analysis. The project involves three main steps: board extraction, piece detection, and classification.\n' +
+      'Board extraction includes HSV masking, preprocessing, edge detection, and contour identification.\n' +
+      'Piece detection addresses challenges such as center text interference and misplacement.\n' +
+      'Classification utilizes templates for both vertical and horizontal domino pieces, employing template matching with preprocessing for accurate results.\n' +
+      'The final component, score calculation, involves dynamic programming considering player positions on the score board.',
+    github_link: 'https://github.com/hutanmihai/Double-Double-Dominoes/blob/main/README.md',
+    live_demo_link: null,
+    youtube_link: null,
+    technologies: ['python', 'opencv-wordmark', 'numpy', 'anaconda'],
+  },
+  {
     title: 'Brain Anomaly Detection',
     description:
       "As a participant in a Kaggle competition hosted by my university's Artificial Intelligence course, I successfully created a binary classification model designed to identify brain anomalies within CT scans. This model helped me obtain the 8th place out of 128 students.",
