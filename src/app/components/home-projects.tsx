@@ -13,6 +13,15 @@ import Typography from '@mui/material/Typography'
 
 const PROJECTS = [
   {
+    title: 'The Flinstones - Facial detection & recognition',
+    description:
+      'Implemented a facial detection and recognition system for characters in "The Flinstones" using a sliding window approach and Convolutional Neural Networks (CNNs). The project involved patch extraction, binary and multi-class classification, and sliding window techniques.',
+    live_demo_link: null,
+    youtube_link: null,
+    github_link: 'https://github.com/hutanmihai/flinstones-facial-detection-recognition',
+    technologies: ['python', 'pytorch', 'numpy', 'matplotlib', 'opencv-wordmark', 'anaconda'],
+  },
+  {
     title: 'Reinforcement Learning - Atari Skiing',
     description:
       'Developed DQN and DDQN algorithms for OpenAI Gym Skiing environment. Showcased commitment to refining network architecture and preprocessing, addressing challenges in hyperparameter tuning. This project marked my initial venture into reinforcement learning implementations.',
