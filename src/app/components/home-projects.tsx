@@ -13,6 +13,30 @@ import Typography from '@mui/material/Typography'
 
 const PROJECTS = [
   {
+    title: 'RoCar - Car Price Predictor based on Machine Learning',
+    description:
+      'This thesis introduces a production-grade web application, tailored for the Romanian automotive market, designed to predict vehicle prices.\nRoCar utilizes a model specialized in Romania\'s economy and pricing, trained on data we have independently scraped.\nThe application stands out by using both structured data (year of production, manufacturer, model, options) and information from images and descriptions, leveraging a self-made multimodal architecture for more accurate predictions.',
+    live_demo_link: 'https://bachelor-thesis-nu.vercel.app/',
+    youtube_link: null,
+    github_link: 'https://github.com/hutanmihai/bachelor-thesis',
+    technologies: [
+      'python',
+      'pytorch',
+      'numpy',
+      'matplotlib',
+      'fastapi',
+      'sqlalchemy',
+      'postgresql',
+      'docker',
+      'githubactions',
+      'pytest-wordmark',
+      'poetry',
+      'nextjs',
+      'tailwindcss',
+      'typescript'
+    ],
+  },
+  {
     title: 'The Flinstones - Facial detection & recognition',
     description:
       'Implemented a facial detection and recognition system for characters in "The Flinstones" using a sliding window approach and Convolutional Neural Networks (CNNs). The project involved patch extraction, binary and multi-class classification, and sliding window techniques.',
