@@ -163,9 +163,7 @@ export default function HomeHero() {
 
       <m.div variants={varFade().in}>
         <Typography variant="body2" sx={{ textAlign: 'center' }}>
-          I am a dedicated graduate computer science student at the University of Bucharest,
-          Romania, with a passion for programming and a keen interest in machine learning and web
-          development.
+          I am a dedicated first-year master&#39;s student specializing in AI at the University of Bucharest, Romania, with a passion for programming and a keen interest in machine learning and web development.
         </Typography>
       </m.div>
 
