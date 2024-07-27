@@ -20,13 +20,21 @@ import {
 const EDUCATIONS = [
   {
     institution: 'University of Bucharest',
+    degree: 'Master of Science in Artificial Intelligence',
+    date: '2024 - 2026',
+    gpa: 'N/A',
+    icon: '/assets/landing-page/education/unibuc.webp',
+    image: '/assets/landing-page/education/unibuc.webp',
+  },
+  {
+    institution: 'University of Bucharest',
     degree: 'Bachelor of Science in Computer Science',
     date: '2021 - 2024',
     gpa: '8/10',
     icon: '/assets/landing-page/education/unibuc.webp',
     descriptions: [
       'I am a member of the performance group, benefiting from a full scholarship throughout my university journey.',
-      "During my Bachelor's degree, I took part in a lot of interesting subjects that broadened my knowledge. Some of them include Data Structures, Advanced Algorithms, Object- Oriented Programming, Operating Systems, Artificial Intelligence and Advanced Databases.",
+      'During my Bachelor\'s degree, I took part in a lot of interesting subjects that broadened my knowledge. Some of them include Data Structures, Advanced Algorithms, Object- Oriented Programming, Operating Systems, Artificial Intelligence and Advanced Databases.',
     ],
     image: '/assets/landing-page/education/unibuc.webp',
   },
@@ -108,7 +116,7 @@ export default function HomeEducation() {
                   {education.degree}, {education.date}, {education.gpa}
                 </Typography>
 
-                {education.descriptions.map((description, index) => (
+                {education.descriptions?.map((description, index) => (
                   <Typography key={index} variant="body2" component="p" gutterBottom>
                     {description}
                   </Typography>

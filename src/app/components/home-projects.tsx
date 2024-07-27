@@ -16,7 +16,7 @@ const PROJECTS = [
     title: 'RoCar - Car Price Predictor based on Machine Learning',
     description:
       'This thesis introduces a production-grade web application, tailored for the Romanian automotive market, designed to predict vehicle prices.\nRoCar utilizes a model specialized in Romania\'s economy and pricing, trained on data we have independently scraped.\nThe application stands out by using both structured data (year of production, manufacturer, model, options) and information from images and descriptions, leveraging a self-made multimodal architecture for more accurate predictions.',
-    live_demo_link: 'https://bachelor-thesis-nu.vercel.app/',
+    live_demo_link: null,
     youtube_link: null,
     github_link: 'https://github.com/hutanmihai/bachelor-thesis',
     technologies: [
@@ -33,7 +33,7 @@ const PROJECTS = [
       'poetry',
       'nextjs',
       'tailwindcss',
-      'typescript'
+      'typescript',
     ],
   },
   {
@@ -70,7 +70,7 @@ const PROJECTS = [
   {
     title: 'Brain Anomaly Detection',
     description:
-      "As a participant in a Kaggle competition hosted by my university's Artificial Intelligence course, I successfully created a binary classification model designed to identify brain anomalies within CT scans. This model helped me obtain the 8th place out of 128 students.",
+      'As a participant in a Kaggle competition hosted by my university\'s Artificial Intelligence course, I successfully created a binary classification model designed to identify brain anomalies within CT scans. This model helped me obtain the 8th place out of 128 students.',
     github_link: 'https://github.com/hutanmihai/ML-Brain-Anomaly-Detection',
     live_demo_link: null,
     youtube_link: null,

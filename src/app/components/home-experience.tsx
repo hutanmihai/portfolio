@@ -20,6 +20,19 @@ import {
 const EXPERIENCES = [
   {
     title: 'Software Engineer',
+    company: 'Arcanna.ai',
+    location: 'Hybrid',
+    date: 'February 2024 - Present',
+    icon: '/assets/landing-page/experience/arcanna.svg',
+    descriptions: [
+      'Worked on multiple layers of the backend system, from data pipeline to REST APIs.',
+      'Assisted in revamping the frontend of the application, focusing on performance and better UI/UX.',
+      'Authored unit, integration, and end-to-end tests to ensure scalability and reliability of the application.',
+    ],
+    image: '/assets/landing-page/experience/arcanna.svg',
+  },
+  {
+    title: 'Software Engineer',
     company: 'iBac',
     location: 'Remote',
     date: 'May 2022 - Present',
