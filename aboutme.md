@@ -142,6 +142,6 @@ descriptions, leveraging a self-made multimodal architecture for more accurate p
 ## Skills
 
 - Languages: Python, TypeScript/JavaScript, SQL
-- AI/ML Libraries: PyTorch, scikit-learn, pandas, NumPy, Google ADK
-- Developer Tools: Docker, Git, FastAPI, React, Next.js
+- AI/ML Libraries: PyTorch, scikit-learn, OpenCV, pandas, NumPy, Google ADK
+- Developer Tools: Docker, Git, FastAPI, React, Next.js, PostgreSQL, Pytest
 - Core Concepts: Deep Learning, Machine Learning, NLP, Computer Vision, RAG
