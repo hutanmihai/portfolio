@@ -22,19 +22,21 @@ const EDUCATIONS = [
     institution: 'University of Bucharest',
     degree: 'Master of Science in Artificial Intelligence',
     date: '2024 - 2026',
-    gpa: 'N/A',
     icon: '/assets/landing-page/education/unibuc.webp',
+    descriptions: [
+      'I am a member of the performance group, benefiting from a full scholarship throughout my master journey.',
+      "During my Master's degree, I took part in a lot of interesting subjects that deepened my knowledge in artificial intelligence. Some of them include Computer Vision, Natural Language Processing, Deep Learning, Machine Learning and Probabilistic Programming.",
+    ],
     image: '/assets/landing-page/education/unibuc.webp',
   },
   {
     institution: 'University of Bucharest',
     degree: 'Bachelor of Science in Computer Science',
     date: '2021 - 2024',
-    gpa: '8/10',
     icon: '/assets/landing-page/education/unibuc.webp',
     descriptions: [
       'I am a member of the performance group, benefiting from a full scholarship throughout my university journey.',
-      'During my Bachelor\'s degree, I took part in a lot of interesting subjects that broadened my knowledge. Some of them include Data Structures, Advanced Algorithms, Object- Oriented Programming, Operating Systems, Artificial Intelligence and Advanced Databases.',
+      "During my Bachelor's degree, I took part in a lot of interesting subjects that broadened my knowledge. Some of them include Data Structures, Advanced Algorithms, Object-Oriented Programming, Operating Systems, Artificial Intelligence, Computer Vision, Reinforcement Learning, NLP and Advanced Databases.",
     ],
     image: '/assets/landing-page/education/unibuc.webp',
   },
@@ -42,9 +44,8 @@ const EDUCATIONS = [
     institution: 'National College "Gheorghe Lazar"',
     degree: 'High School Diploma in Mathematics and Computer Science',
     date: '2017 - 2021',
-    gpa: '9.5/10',
     icon: '/assets/landing-page/education/lazar.webp',
-    descriptions: ['Baccalaureate exam: 10 Computer Science, 9,75 Mathematics'],
+    descriptions: ['Baccalaureate Exam: 9.75 Mathematics, 10 Informatics'],
     image: '/assets/landing-page/education/lazar.webp',
   },
 ]
@@ -113,7 +114,7 @@ export default function HomeEducation() {
                 </Typography>
 
                 <Typography variant="body1" component="p" gutterBottom>
-                  {education.degree}, {education.date}, {education.gpa}
+                  {education.degree}, {education.date}
                 </Typography>
 
                 {education.descriptions?.map((description, index) => (

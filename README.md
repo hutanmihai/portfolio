@@ -24,6 +24,7 @@
 
 ---
 
+
 <h2 style="text-align: center">About</h3>
 <p style="text-align: center">This portfolio is a reflection of my journey in the world of computer science and programming. It's a collection of my work, including frontend and backend projects, machine learning experiments, and more.</p>
 

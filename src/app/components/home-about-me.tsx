@@ -14,7 +14,7 @@ const CARDS = [
     icon: 'cib:about-me',
     title: 'About Me',
     description:
-      "Throughout my academic journey, I've honed my skills in various facets of computer science, positioning myself to excel in the dynamic world of technology. I am driven by the ambition to continually evolve and become one of the best programmers I can be. I eagerly anticipate opportunities to contribute to innovative projects and collaborate with like-minded professionals in the field.",
+      "Across my experience, studies and projects, I've honed my skills in various facets of computer science, positioning myself to excel in the dynamic world of technology. I am driven by the ambition to continually evolve and become one of the best engineers I can be. I'm always glad to contribute to innovative projects and collaborate with like-minded professionals in the field.",
   },
   {
     icon: 'tabler:play-handball',
