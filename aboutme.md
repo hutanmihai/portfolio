@@ -1,9 +1,5 @@
 # Mihai-Alexandru Hutan
 
-Source: https://www.linkedin.com/in/hutanmihai/ (texts below are verbatim from the LinkedIn
-profile, with the decorative bold-unicode glyphs and section emojis flattened to plain
-characters so they are safe to typeset in LaTeX).
-
 ## Headline
 
 Software Engineer | Machine Learning & Web Development | MSc in AI, University of Bucharest
