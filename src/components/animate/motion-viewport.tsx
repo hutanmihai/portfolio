@@ -30,7 +30,9 @@ export default function MotionViewport({
       component={m.div}
       initial="initial"
       whileInView="animate"
-      viewport={{ once: true, amount: 0.3 }}
+      // 'some' rather than a ratio: sections taller than the viewport can never
+      // satisfy a percentage threshold, and would stay stuck at opacity 0.
+      viewport={{ once: true, amount: 'some' }}
       variants={varContainer()}
       {...other}
     >

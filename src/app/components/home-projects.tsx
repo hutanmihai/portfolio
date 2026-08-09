@@ -15,7 +15,7 @@ const PROJECTS = [
   {
     title: 'RoCar - Car Price Predictor based on Machine Learning',
     description:
-      'This thesis introduces a production-grade web application, tailored for the Romanian automotive market, designed to predict vehicle prices.\nRoCar utilizes a model specialized in Romania\'s economy and pricing, trained on data we have independently scraped.\nThe application stands out by using both structured data (year of production, manufacturer, model, options) and information from images and descriptions, leveraging a self-made multimodal architecture for more accurate predictions.',
+      "This thesis introduces a production-grade web application, tailored for the Romanian automotive market, designed to predict vehicle prices.\nRoCar utilizes a model specialized in Romania's economy and pricing, trained on data we have independently scraped.\nThe application stands out by using both structured data (year of production, manufacturer, model, options) and information from images and descriptions, leveraging a self-made multimodal architecture for more accurate predictions.",
     live_demo_link: null,
     youtube_link: null,
     github_link: 'https://github.com/hutanmihai/bachelor-thesis',
@@ -37,6 +37,17 @@ const PROJECTS = [
     ],
   },
   {
+    title: 'Beyond One View - Cross-Camera Vehicle Tracking',
+    description:
+      'Given a single bounding box in one camera, the system tracks that exact vehicle through the whole video, then re-identifies it from scratch in a second, unsynchronized camera watching the same intersection from a completely different angle.\n' +
+      'Detection and tracking are handled by YOLO11x with a re-tuned BoT-SORT configuration, while identity is carried across views by DINOv2 ViT-L/14 appearance embeddings collected into a target signature.\n' +
+      'Occlusions are bridged with IoU re-identification and an exponentially weighted motion extrapolation, and the Camera B target is elected by candidate voting over cosine similarity, so a box is emitted for every single frame.',
+    live_demo_link: null,
+    youtube_link: null,
+    github_link: 'https://github.com/hutanmihai/intersection-surveillance',
+    technologies: ['python', 'pytorch', 'opencv-wordmark', 'numpy'],
+  },
+  {
     title: 'The Flinstones - Facial detection & recognition',
     description:
       'Implemented a facial detection and recognition system for characters in "The Flinstones" using a sliding window approach and Convolutional Neural Networks (CNNs). The project involved patch extraction, binary and multi-class classification, and sliding window techniques.',
@@ -46,13 +57,15 @@ const PROJECTS = [
     technologies: ['python', 'pytorch', 'numpy', 'matplotlib', 'opencv-wordmark', 'anaconda'],
   },
   {
-    title: 'Reinforcement Learning - Atari Skiing',
+    title: 'Qwirkle Score Calculator',
     description:
-      'Developed DQN and DDQN algorithms for OpenAI Gym Skiing environment. Showcased commitment to refining network architecture and preprocessing, addressing challenges in hyperparameter tuning. This project marked my initial venture into reinforcement learning implementations.',
+      'Reading a Qwirkle board from a handheld photo and scoring the turn using only classical computer vision - no neural networks and no training data.\n' +
+      'The pipeline isolates the board with HSV masking, morphology and Canny contours, then warps it to a fixed 1600x1600 canvas so every later stage becomes simple integer arithmetic on a 16x16 grid.\n' +
+      'Templates for the bonus quadrants and the six tile shapes are built programmatically from the dataset, tiles are detected via morphological processing and image moments, classified by HSV color voting plus template matching, and the turn score is computed by line traversal including bonus squares and the Qwirkle bonus.',
     live_demo_link: null,
     youtube_link: null,
-    github_link: 'https://github.com/hutanmihai/reinforcement-learning-skiing',
-    technologies: ['python', 'pytorch', 'numpy', 'plotly', 'opencv-wordmark', 'anaconda'],
+    github_link: 'https://github.com/hutanmihai/qwirkle-score-calculator',
+    technologies: ['python', 'opencv-wordmark', 'numpy', 'matplotlib'],
   },
   {
     title: 'Double Double Dominoes',
@@ -70,11 +83,53 @@ const PROJECTS = [
   {
     title: 'Brain Anomaly Detection',
     description:
-      'As a participant in a Kaggle competition hosted by my university\'s Artificial Intelligence course, I successfully created a binary classification model designed to identify brain anomalies within CT scans. This model helped me obtain the 8th place out of 128 students.',
+      "As a participant in a Kaggle competition hosted by my university's Artificial Intelligence course, I successfully created a binary classification model designed to identify brain anomalies within CT scans. This model helped me obtain the 8th place out of 128 students.",
     github_link: 'https://github.com/hutanmihai/ML-Brain-Anomaly-Detection',
     live_demo_link: null,
     youtube_link: null,
     technologies: ['python', 'tensorflow', 'numpy', 'pandas-wordmark', 'matplotlib', 'anaconda'],
+  },
+  {
+    title: 'Image Super-Resolution - 4x Upscaling with EDSR & RCAN',
+    description:
+      'Competition solution for reconstructing 128x128 high-resolution images from 32x32 low-resolution inputs, ranked by pixel-level MSE.\n' +
+      'Both EDSR and RCAN were implemented from scratch in PyTorch with a PixelShuffle upsampling tail, sharing the same training loop, loss and augmentation pipeline.\n' +
+      'The winning setup was EDSR with 128 features and 64 residual blocks, reaching a private test MSE of 360 - driven by a Charbonnier loss that fixed the gradient explosions seen with MSE, geometric augmentation for up to 16x data variety, and 8-transform test-time augmentation.',
+    live_demo_link: null,
+    youtube_link: null,
+    github_link: 'https://github.com/hutanmihai/image-super-resolution',
+    technologies: ['python', 'pytorch', 'numpy', 'matplotlib'],
+  },
+  {
+    title: 'Unsupervised Learning - Clustering 100 Sports Categories',
+    description:
+      'An experiment on how much accuracy you give up by throwing the labels away: clustering 14,492 sports photos into 100 categories with K-means and Hierarchical Clustering on top of self-supervised visual features from DINOv2, MAE and FastViT.\n' +
+      'Cluster assignments are mapped back to classes by majority vote, making the metrics directly comparable to a supervised baseline.\n' +
+      'K-means with zero labels reached 83.4% accuracy on the 100-class problem - 417x better than random and within 16 points of a fully supervised SVM - showing that feature quality dominates every other choice, with ARI swinging from 0.26 to 0.73 purely based on the encoder.',
+    live_demo_link: null,
+    youtube_link: null,
+    github_link: 'https://github.com/hutanmihai/unsupervised-learning',
+    technologies: ['python', 'pytorch', 'scikitlearn', 'numpy', 'pandas-wordmark', 'matplotlib'],
+  },
+  {
+    title: 'Visual Sentence Complexity Prediction',
+    description:
+      'A text regression task: predicting how visually complex the scene described by an English sentence is, scored by Spearman rank correlation.\n' +
+      'The work covers exploratory analysis with nine engineered features (lexical diversity, polysemy, Flesch-Kincaid and Gunning Fog readability indices), preprocessing and augmentation, and TF-IDF and Word2Vec feature representations.\n' +
+      'Support Vector Regression and a regularized MLP were compared under a deliberate constraint - the test set does not resemble the validation set - with the neural network taking the lead at 0.62159 public and 0.54426 private Spearman.',
+    live_demo_link: null,
+    youtube_link: null,
+    github_link: 'https://github.com/hutanmihai/visual-sentence-complexity-prediction',
+    technologies: ['python', 'pytorch', 'scikitlearn', 'pandas-wordmark', 'numpy', 'matplotlib'],
+  },
+  {
+    title: 'Reinforcement Learning - Atari Skiing',
+    description:
+      'Developed DQN and DDQN algorithms for OpenAI Gym Skiing environment. Showcased commitment to refining network architecture and preprocessing, addressing challenges in hyperparameter tuning. This project marked my initial venture into reinforcement learning implementations.',
+    live_demo_link: null,
+    youtube_link: null,
+    github_link: 'https://github.com/hutanmihai/reinforcement-learning-skiing',
+    technologies: ['python', 'pytorch', 'numpy', 'plotly', 'opencv-wordmark', 'anaconda'],
   },
   {
     title: 'Calorie Tracker Backend',
